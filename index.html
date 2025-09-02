@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseminasi dan Layanan Statistik Dashboard PST 8200</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted playsinline>
+        <source src="videos/background.mp4" type="video/mp4">
+    </video>    
+    <header>
+        <div class="header-content">
+            <div class="logo-left">
+                <img src="images/bps-logo.png" alt="Left Logo">
+            </div>
+            <div class="center-content">
+                <div class="clock">
+                    <div class="hours">
+                    <div class="first">
+                        <div class="number">0</div>
+                    </div>
+                    <div class="second">
+                        <div class="number">0</div>
+                    </div>
+                    </div>
+                    <div class="tick">:</div>
+                    <div class="minutes">
+                    <div class="first">
+                        <div class="number">0</div>
+                    </div>
+                    <div class="second">
+                        <div class="number">0</div>
+                    </div>
+                    </div>
+                    <div class="tick">:</div>
+                    <div class="seconds">
+                    <div class="first">
+                        <div class="number">0</div>
+                    </div>
+                    <div class="second infinite">
+                        <div class="number">0</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="header-text" id="header-text">
+                    <h1>PELAYANAN STATISTIK TERPADU BPS PROVINSI MALUKU UTARA</h1>
+                    <p id="looping-text" class="looping-text">MELAYANI DENGAN PROFESIONAL, INTEGRITAS, DAN AMANAH</p>
+                </div>
+            </div>
+            <div class="logo-right">
+                <img src="images/bps-motto.png" alt="Right Logo">
+            </div>
+        </div>
+    </header>
+        <main>
+            <section class="section-container">
+                <div class="square-section nomor-antrian">
+                    <div class="antrian-label">NOMOR ANTRIAN:</div>
+                    <div class="antrian-nomor" id="nomor-antrian">A001</div>
+                    <div class="antrian-instruksi">
+                        Silahkan Menuju Meja Pelayanan
+                    </div>
+                </div>
+                <div class="square-section slideshow-container">
+                    <div class="slideshow">
+                        <!-- Slideshow images -->
+                        <img class="mySlides" src="images/pst1.jpeg" style="display: block;">
+                        <img class="mySlides" src="images/pst2.jpeg" style="display: none;">
+                        <img class="mySlides" src="images/pst3.jpeg" style="display: none;">
+                        <img class="mySlides" src="images/pst4.jpeg" style="display: none;">
+                        <img class="mySlides" src="images/pst5.jpeg" style="display: none;">
+                        <img class="mySlides" src="images/pst6.jpeg" style="display: none;">
+                        <img class="mySlides" src="images/pst7.jpeg" style="display: none;">
+                        <img class="mySlides" src="images/pst8.jpeg" style="display: none;">
+                        <img class="mySlides" src="images/pst9.jpeg" style="display: none;">
+                        <img class="mySlides" src="images/pst10.jpeg" style="display: none;">
+                        <img class="mySlides" src="images/pst11.jpeg" style="display: none;">
+                        <img class="mySlides" src="images/pst12.png" style="display: none;">
+                        <img class="mySlides" src="images/pst13.png" style="display: none;">
+                        <img class="mySlides" src="images/pst14.png" style="display: none;">
+                        <img class="mySlides" src="images/pst15.png" style="display: none;">
+                        <img class="mySlides" src="images/pst16.png" style="display: none;">
+                        <img class="mySlides" src="images/pst17.png" style="display: none;">
+                        <img class="mySlides" src="images/pst18.png" style="display: none;">
+                    </div>
+                </div>
+                <div class="square-section video-wrapper">
+                    <div class="video-container">
+                        <iframe class="youtube-video" src="https://www.youtube.com/embed/DOOrIxw5xOw?autoplay=1&mute=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                <div class="square-section info-kanan">
+                    <div class="info-bubble" id="info-indikator">
+                        <h4>Memuat indikator...</h4>
+                        <p>-</p>
+                        <p>-</p>
+                    </div>
+                    <div class="info-bubble" id="info-publikasi">
+                        <h4>Memuat publikasi...</h4>
+                        <p>-</p>
+                    </div>
+                    <div class="info-bubble" id="info-brs">
+                        <h4>Memuat BRS...</h4>
+                        <p>-</p>
+                        <p>-</p>
+                    </div>
+                    <div class="info-bubble">
+                        <h4>Layanan Tersedia</h4>
+                        <p id="layanan-terpilih">Konsultasi Statistik</p>
+                        <div id="layanan-icon" style="font-size: 3vh; margin-top: 5px;"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <div class="marquee">
+        <div class="marquee-content">
+            Selamat datang di Pelayanan Statistik Terpadu BPS Provinsi Maluku Utara | Bagaimana cara mendapatkan data di BPS? | Tata cara mendapatkan data di BPS : Jika ingin membaca atau membeli buku publikasi silahkan datang ke Perpustakaan yang berada di semua kantor BPS baik Pusat, Provinsi maupun Kabupaten/ Kota. Untuk di BPS Provinsi Maluku Utara terletak di lantai 1; Jika ingin membaca softcopy publikasi silahkan mengunjungi website BPS Provinsi Maluku Utara di malut.bps.go.id; Jika ingin membeli softcopy publikasi atau data mikro hasil survei/ sensus silahkan datang ke Perpustakaan BPS Provinsi Maluku Utara terletak di lantai 1, atau melalui email pst8200@bps.go.id | Bagaimana cara mendapatkan data di BPS jika datang langsung? | Bagi konsumen data yang datang langsung ke BPS dapat dilayani di Ruang Perpustakaan/Pusat Pelayanan Terpadu (PST). Ruang perpustakaan, pengunjung dapat membaca buku publikasi BPS dalam bentuk tercetak atau softcopy (digital library). Pengunjung dapat melakukan pembelian buku publikasi BPS dalam bentuk tercetak atau softcopy dengan menghubungi petugas Pelayanan Statistik Terpadu. |
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+        const layananList = [
+        { nama: "Perpustakaan", icon: "📚" },
+        { nama: "Konsultasi Statistik", icon: "💬" },
+        { nama: "Rekomendasi Statistik", icon: "📝" },
+        { nama: "Penjualan Produk Statistik", icon: "🛒" }
+        ];
+
+        let index = 0;
+        const target = document.getElementById("layanan-terpilih");
+        const iconDiv = document.getElementById("layanan-icon");
+
+        function updateLayanan() {
+        const layanan = layananList[index];
+        target.textContent = layanan.nama;
+        iconDiv.textContent = layanan.icon;
+        index = (index + 1) % layananList.length;
+        }
+
+        updateLayanan();
+        setInterval(updateLayanan, 4000);
+    </script>
+
+    <script>
+    let indikatorList = [];
+    let currentIndeks = 0;
+
+    async function loadIndicators() {
+        const url1 = "https://webapi.bps.go.id/v1/api/list/model/indicators/domain/8200/key/1b2bd1f77c328c0d730765f3bc40b844/page/1";
+        const url2 = "https://webapi.bps.go.id/v1/api/list/model/indicators/domain/8200/key/1b2bd1f77c328c0d730765f3bc40b844/page/2";
+        try {
+            const [res1, res2] = await Promise.all([fetch(url1), fetch(url2)]);
+            const [data1, data2] = await Promise.all([res1.json(), res2.json()]);
+
+            // Gabungkan semua data dari page 1 & 2
+            indikatorList = [...data1.data[1], ...data2.data[1]];
+
+            // Mulai rotasi indikator
+            tampilkanIndikator();
+            setInterval(tampilkanIndikator, 4000); // Ganti tiap 4 detik
+        } catch (err) {
+            console.error("Gagal memuat data indikator:", err);
+        }
+    }
+
+    function tampilkanIndikator() {
+        if (indikatorList.length === 0) return;
+
+        const data = indikatorList[currentIndeks];
+        const bubble = document.getElementById("info-indikator");
+
+        const unitText = data.unit && data.unit !== "Tidak Ada Satuan" ? `<p>${data.unit}</p>` : "";
+
+        bubble.innerHTML = `
+            <h4>${data.title}</h4>
+            <p><strong>${data.value}</strong></p>
+            ${unitText}
+        `;
+
+        currentIndeks = (currentIndeks + 1) % indikatorList.length;
+    }
+
+    // Mulai
+    loadIndicators();
+    </script>
+    <script>
+    let publikasiList = [];
+    let publikasiIndex = 0;
+
+    async function loadPublikasi() {
+        const url = "https://webapi.bps.go.id/v1/api/list/model/publication/domain/8200/key/1b2bd1f77c328c0d730765f3bc40b844/";
+        try {
+            const res = await fetch(url);
+            const data = await res.json();
+            publikasiList = data.data[1].slice(0, 10); // ambil 10 pertama untuk jaga-jaga
+            tampilkanPublikasi();
+            setInterval(tampilkanPublikasi, 4000); // tampil bergantian tiap 4 detik
+        } catch (err) {
+            console.error("Gagal memuat publikasi:", err);
+        }
+    }
+
+    function tampilkanPublikasi() {
+        if (publikasiList.length === 0) return;
+
+        const pub = publikasiList[publikasiIndex];
+        const container = document.getElementById("info-publikasi");
+
+        container.innerHTML = `
+            <h4>Publikasi Terbaru</h4>
+            <p><strong>${pub.title}</strong></p>
+            <p><span style="font-size: 0.9em; color: #ccf8ff;">${formatTanggal(pub.rl_date)}</span></p>
+        `;
+
+        publikasiIndex = (publikasiIndex + 1) % publikasiList.length;
+    }
+
+    loadPublikasi();
+    </script>
+    <script>
+    let brsList = [];
+    let brsIndex = 0;
+
+    async function loadBRS() {
+        const url = "https://webapi.bps.go.id/v1/api/list/model/pressrelease/domain/8200/key/1b2bd1f77c328c0d730765f3bc40b844/page/1";
+        try {
+            const res = await fetch(url);
+            const rawData = await res.json();
+            brsList = rawData.data[1]; // Ambil array kedua
+            tampilkanBRS();
+            setInterval(tampilkanBRS, 4000); // Ganti setiap 4 detik
+        } catch (err) {
+            console.error("Gagal memuat BRS:", err);
+        }
+    }
+
+    function tampilkanBRS() {
+        if (brsList.length === 0) return;
+        const brs = brsList[brsIndex];
+        const container = document.getElementById("info-brs");
+
+        container.innerHTML = `
+            <h4>BRS Terbaru</h4>
+            <p><strong>${brs.title.trim()}</strong></p>
+            <p><span style="font-size: 0.9em; color: #ccf8ff;">${formatTanggal(brs.rl_date)}</span></p>
+        `;
+
+        brsIndex = (brsIndex + 1) % brsList.length;
+    }
+
+    loadBRS();
+    </script>
+    <script>
+    function formatTanggal(tanggalStr) {
+    const bulanIndo = [
+        "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+        "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+    ];
+    const [tahun, bulan, tanggal] = tanggalStr.split("-");
+    return `${parseInt(tanggal)} ${bulanIndo[parseInt(bulan) - 1]} ${tahun}`;}
+    </script>
+    <script>
+    let lastNomor = "";
+
+    async function cekUpdateAntrian() {
+        try {
+            const res = await fetch('https://10.82.7.4:5443/get-antrian');
+            const data = await res.json();
+
+            if (data.nomor && !data.dipanggil) {
+                document.getElementById('nomor-antrian').textContent = data.nomor;
+
+                // 🔔 Play notification sound
+                const notif = new Audio('sounds/notif.mp3'); // pastikan file ini tersedia
+                notif.play();
+
+                // 🗣️ Setelah suara notifikasi, baru bicara (delay 1.5 detik)
+                setTimeout(() => {
+                    const tts = new SpeechSynthesisUtterance("Nomor antrian " + data.nomor + ", silakan menuju meja pelayanan.");
+                    tts.lang = 'id-ID';
+                    tts.rate = 0.85; // pelankan suara (normal = 1.0)
+                    window.speechSynthesis.speak(tts);
+                }, 3000);
+
+                // ✅ Tandai sudah dipanggil agar tidak ulang
+                await fetch('https://10.82.7.4:5443/sudah-dipanggil', { method: 'POST' });
+            }
+        } catch (e) {
+            console.error("Gagal cek antrian:", e);
+        }
+    }
+
+    setInterval(cekUpdateAntrian, 2000);
+    </script>
+
+</body>
+</html>
